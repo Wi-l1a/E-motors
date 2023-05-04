@@ -1,0 +1,135 @@
+.header {
+    width: 100%;
+}
+
+.header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.logo_block {
+    flex: 0 1 15%;
+}
+
+.logo_block img {
+    width: 130px;
+    height: 72px;
+    cursor: pointer;
+}
+
+.nav {
+    flex: 0 1 50%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_item {
+    color: #FFFFFF;
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-transform: uppercase;
+}
+
+.activeMenu_item {
+    color: #FFCD00;
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-transform: uppercase;
+}
+
+.menu_item button {
+    color: #FFFFFF;
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-transform: uppercase;
+}
+
+.activeMenu_item button {
+    color: #FFCD00;
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-transform: uppercase;
+}
+
+.links {
+    color: #FFFFFF;
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.connect_btn {
+    width: 218px;
+    height: 39px;
+    border-radius: 10px;
+    background: #FFFFFF4D;
+    color: #FFCD00;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    line-height: 18.96px;
+    transition: 0.3s;
+}
+
+.connect_btn:hover {
+    background: #FFCD00;
+    color: #000;
+}
+
+.connect_btn:active {
+    background: #000;
+    color: #FFCD00;
+}
+
+@media (min-width:1920px) {
+    .header_block {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width:1200px) {
+    .menu_item {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:992px) {
+    .nav {
+        display: none;
+    }
+
+    .connect_block {
+        display: none;
+
+    }
+}
+
+
+@media (max-width:768px) {
+    .nav {
+        display: none;
+    }
+
+    .connect_block {
+        display: none;
+    }
+}

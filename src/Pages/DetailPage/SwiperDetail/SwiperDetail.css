@@ -1,0 +1,94 @@
+.SwiperDetail {
+    width: 1000px;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+
+
+.SwiperDetail .swiperCardDetail img {
+    width: 100%;
+    aspect-ratio: 20/13;
+    object-fit: cover;
+}
+
+.SwiperDetail_mini {
+    width: 1000px;
+
+}
+
+.SwiperCardDetail_mini {
+    width: 100px;
+    margin: 10px 5px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.SwiperCardDetail_mini img {
+    width: 100%;
+    aspect-ratio: 6/3;
+    object-fit: cover;
+}
+
+.SwiperDetail .swiper-button-prev,
+.SwiperDetail .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 7, 62, 0.5);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.SwiperDetail .swiper-button-prev::after,
+.SwiperDetail .swiper-button-next::after {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.SwiperDetail .swiper-button-prev:hover,
+.SwiperDetail .swiper-button-next:hover {
+    transform: scale(1.1);
+}
+
+.SwiperDetail_mini .swiper-slide-thumb-active {
+    border: 3px solid #FFCD00;
+}
+
+@media (max-width:1400px) {
+    .SwiperDetail {
+        width: 800px;
+    }
+
+    .SwiperDetail_mini {
+        width: 800px;
+    }
+}
+
+@media (max-width:1200px) {
+    .SwiperDetail {
+        width: 650px;
+        height: 50vh;
+
+    }
+
+    .SwiperDetail_mini {
+        width: 650px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width:992px) {
+    .SwiperDetail {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .SwiperDetail_mini {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}

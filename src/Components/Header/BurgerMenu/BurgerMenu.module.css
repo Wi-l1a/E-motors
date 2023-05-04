@@ -1,0 +1,159 @@
+.burgerMenu {
+    width: 50px;
+    height: 50px;
+}
+
+.menu_btn_active,
+.menu_btn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    cursor: pointer;
+    background: hsla(0, 0%, 0%, 0.5);
+    border-radius: 10px;
+
+}
+
+
+.menu_btn_active span,
+.menu_btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    background-color: #FFCD00;
+    transition: all 0.5s;
+    z-index: 100;
+    left: 20%;
+    top: 25%;
+}
+
+.menu_btn span {}
+
+
+.menu_btn span:nth-of-type(2) {
+    top: calc(55% - 5px);
+}
+
+.menu_btn span:nth-of-type(3) {
+    top: calc(55% + 5px);
+}
+
+.menu_btn_active span:nth-of-type(1) {
+    display: none;
+}
+
+.menu_btn_active span:nth-of-type(2) {
+    top: 45%;
+    transform: rotate(45deg);
+}
+
+.menu_btn_active span:nth-of-type(3) {
+    top: 45%;
+    transform: rotate(-45deg);
+}
+
+
+.menu_active,
+.menu {
+    position: fixed;
+    width: 90%;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    background: #001D3D;
+    transition: 0.5s;
+    z-index: 80;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5%;
+}
+
+.menu_active {
+    transform: translateX(0);
+
+}
+
+.menu {
+
+    transform: translateX(100%);
+
+}
+
+.menu nav ul li {
+    list-style-type: none;
+}
+
+.links,
+.menu_item {
+    font-family: 'Gotham' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.activeMenu_item {
+    font-family: 'Gotham' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFCD00;
+    order: 4;
+    flex-grow: 0;
+
+}
+
+.navigation {
+    margin-top: 90px;
+
+}
+
+.navigation ul li {
+    line-height: 6;
+    text-align: end;
+}
+
+
+
+.connect_btn {
+    width: 258px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFCD00;
+    margin-bottom: 20%;
+}
+
+.box_contact_info {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.box_contact_info a {
+    flex: 0 1 20%;
+    cursor: pointer;
+}
+
+.box_contact_info a img {
+    width: 100%;
+}
+
+@media (min-width:993px) {
+    .burgerMenu {
+        display: none;
+    }
+}

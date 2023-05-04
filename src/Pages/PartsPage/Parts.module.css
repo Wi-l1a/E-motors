@@ -1,0 +1,526 @@
+.parts_wrapper {
+    min-height: 80vh;
+}
+
+.container {
+    width: 85%;
+    margin: 100px auto;
+
+}
+
+
+.categories_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.categories_block_filtr {
+    flex: 0 1 20%;
+    padding: 0 10px;
+}
+
+
+.search {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    background-color: transparent;
+    border: 2px solid #FFCD00;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: url('/src/assets/search.png') no-repeat center;
+    background-position: 90% 50%;
+    margin-bottom: 30px;
+}
+
+.search::placeholder {
+    color: #fff;
+}
+
+.search:focus {
+    box-shadow: #FFCD00 0px 0px 10px 2px;
+}
+
+.dropDown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 8px 8px 0;
+    border-bottom: 2px solid #FFFFFF80;
+    margin-bottom: 6px;
+}
+
+.dropDown h4 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Gotham', sans-serif;
+    color: #fff;
+}
+
+.dropDown img {
+    transition: 0.4s;
+}
+
+.arrow {
+    transform: rotate(-90deg);
+}
+
+.subcategories {
+    transition: 0.6s all;
+}
+
+.radio {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 21.6px;
+    cursor: pointer;
+}
+
+.active {
+    color: #FFCD00;
+}
+
+.cards {
+    flex: 0 1 75%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+
+}
+
+.card {
+    flex: 0 1 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #003566;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    transition: .5s;
+    margin-bottom: 30px;
+    box-shadow: -2px -2px 28px #001529,
+        2px 2px 28px #0055a3;
+}
+
+.card button {
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.card:hover {
+    box-shadow: -10px 10px 20px -5px #a1be00, 10px -10px 20px -5px #ffcc00, 0px 0px 20px 10px #0049bec0;
+}
+
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.part_img {
+    height: 200px;
+}
+
+.card h2 {
+    margin: 15px 0;
+    height: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.info_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Gotham', sans-serif;
+    color: #fff;
+}
+
+.price_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.price_block h3 {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #FFCD00;
+}
+
+.price_block a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Gotham', sans-serif;
+    color: #FFCD00;
+    width: 148px;
+    height: 39px;
+    border: 2px solid #FFCD00;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.price_block a:hover {
+    background-color: #FFCD00;
+    color: #000;
+}
+
+.price_block a:active {
+    background-color: #000;
+    color: #FFCD00;
+}
+
+.item_foto_block {
+    position: relative;
+}
+
+#stock {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px 5px;
+    border-radius: 50%;
+    background: black;
+}
+
+.empty {
+    width: 100%;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Gotham', sans-serif;
+    text-align: center;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 75%;
+    height: 50vh;
+}
+
+
+.catalogDropDown {
+    display: none;
+}
+
+@media (min-width:1920px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+@media (max-width:1200px) {
+    .search {
+        font-size: 14px;
+    }
+
+    .dropDown h4 {
+        font-size: 15px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .info_block {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .price_block h3 {
+        font-size: 16px;
+    }
+
+    .price_block {
+        padding: 0 10px;
+    }
+
+    .price_block a {
+        font-size: 13px;
+        width: 105px;
+    }
+
+    .part_img {
+        height: 180px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        margin: 20px auto;
+
+    }
+
+    .search {
+        font-size: 12px;
+    }
+
+    .dropDown h4 {
+        font-size: 12px;
+    }
+
+    .categories_block {
+        display: block;
+    }
+
+
+    .card {
+        flex: 0 1 47%;
+    }
+
+    .cards {
+        margin-top: 20px;
+    }
+
+    .catalogDropDown {
+        width: 100%;
+        height: 60px;
+        background: #001D3D;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .catalogDropDown:active {
+        background: #003566;
+    }
+
+    .dropDownNone {
+        display: none;
+    }
+
+    .categoryDropDownShow {
+        transition: 1s;
+        display: block;
+        margin-bottom: 20px;
+        background: #001D3DB2;
+        transition: 0.5s;
+        padding: 10px;
+        border-radius: 10px;
+
+
+    }
+
+    .catalogDropDown img {
+        width: 20px;
+        height: 30px;
+    }
+
+    .catalogDropDown h1 {
+        font-family: 'Gotham', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .arrowRotate {
+        transform: rotate(-90deg);
+        transition: 0.5s;
+    }
+}
+
+@media (max-width:768px) {
+    .loader {
+        flex: 0 1 100%;
+    }
+
+    .container {
+        margin: 20px auto;
+    }
+
+    .categories_block {
+        display: block;
+    }
+
+
+    .card {
+        flex: 0 1 47%;
+    }
+
+    .cards {
+        margin-top: 20px;
+    }
+
+    .catalogDropDown {
+        width: 100%;
+        height: 60px;
+        background: #001D3D;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .catalogDropDown:active {
+        background: #003566;
+    }
+
+    .dropDownNone {
+        display: none;
+    }
+
+    .categoryDropDownShow {
+        transition: 1s;
+        display: block;
+        margin-bottom: 20px;
+        background: #001D3DB2;
+        transition: 0.5s;
+        padding: 10px;
+        border-radius: 10px;
+
+
+    }
+
+    .catalogDropDown img {
+        width: 20px;
+        height: 30px;
+    }
+
+    .catalogDropDown h1 {
+        font-family: 'Gotham', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .arrowRotate {
+        transform: rotate(-90deg);
+        transition: 0.5s;
+    }
+
+    .price_block a {
+        font-size: 12px;
+        width: 90px;
+    }
+
+    .card h2 {
+        line-height: 20px;
+
+    }
+}
+
+@media (max-width:425px) {
+
+
+    .part_img {
+        height: 130px;
+    }
+
+    .card h2 {
+        font-size: 12px;
+        padding: 0 10px;
+        line-height: 20px;
+    }
+
+    .info_block {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .price_block h3 {
+        font-size: 12px;
+    }
+
+    .price_block {
+        padding: 0 10px;
+    }
+
+    .price_block a {
+        font-size: 9px;
+        width: 70px;
+    }
+}
+
+@media (max-width:390px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    .search {
+        font-size: 14px;
+    }
+
+    .dropDown h4 {
+        font-size: 15px;
+    }
+
+    .card h2 {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .info_block {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .price_block h3 {
+        font-size: 12px;
+    }
+
+    .price_block {
+        padding: 0 10px;
+    }
+
+    .price_block a {
+        font-size: 9px;
+        width: 70px;
+    }
+
+    .car_img {
+        height: 180px;
+    }
+
+}

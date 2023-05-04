@@ -1,0 +1,158 @@
+.SwiperAbout {
+    height: 100%;
+}
+
+.about_box-img img {
+    width: 100%;
+    aspect-ratio: 17/13;
+    object-fit: cover;
+
+}
+
+.slideAbout-Card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_box-img,
+.about_box-title {
+    flex: 0 1 50%;
+    background: #001D3D;
+}
+
+.about_box-img img {
+    width: 100%;
+}
+
+
+.about_box-title h2,
+.about_box-title p {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.about_box-title h2 {
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 7%;
+}
+
+.about_box-title p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about_box-title {
+    display: flex;
+    align-items: center;
+}
+
+.about_center-box-title {
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.SwiperAbout .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 10%;
+    left: 7%;
+}
+
+
+
+.SwiperAbout .swiper-pagination-bullet-active,
+.SwiperAbout .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #FFFFFF;
+}
+
+.SwiperAbout .swiper-pagination-bullet-active {
+    background: #FFFFFF;
+}
+
+@media (max-width:1200px) {
+    .about_center-box-title p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .slideAbout-Card {
+        flex-direction: column;
+    }
+
+    .about_box-title h2 {
+        font-size: 28px;
+        line-height: 20px;
+    }
+
+    .about_box-title p {
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 20%;
+    }
+
+    .about_box-title h2 {
+        font-size: 35px;
+
+        margin: 10% 0;
+    }
+
+    .SwiperAbout .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 3%;
+        left: 10%;
+        text-align: start;
+    }
+}
+
+
+
+@media (max-width:768px) {
+
+
+    .slideAbout-Card {
+        flex-direction: column;
+    }
+
+    .about_center-box-title {
+        height: 100%;
+    }
+
+    .about_box-title h2 {
+        font-size: 28px;
+        line-height: 20px;
+    }
+
+    .about_box-title p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 20%;
+    }
+
+    .about_box-title h2 {
+        margin: 10% 0;
+    }
+
+    .about_center-box-title h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .SwiperAbout .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 3%;
+        left: 10%;
+        text-align: start;
+    }
+
+    .about_center-box-title p {
+        font-size: 12px;
+    }
+}

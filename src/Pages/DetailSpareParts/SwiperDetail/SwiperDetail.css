@@ -1,0 +1,96 @@
+.SwiperDetailParts {
+    width: 1000px;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.SwiperDetailParts .swiperCardDetail img {
+    width: 100%;
+    aspect-ratio: 20/13;
+    object-fit: cover;
+}
+
+
+
+.SwiperDetailParts_mini {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1000px;
+    margin-left: 0px;
+}
+
+.SwiperCardDetail_mini {
+    width: 100px;
+    margin: 10px 5px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.SwiperCardDetail_mini img {
+    width: 100%;
+    aspect-ratio: 6/3;
+    object-fit: cover;
+}
+
+.SwiperDetailParts .swiper-button-prev,
+.SwiperDetailParts .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 7, 62, 0.5);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.SwiperDetailParts .swiper-button-prev::after,
+.SwiperDetailParts .swiper-button-next::after {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.SwiperDetailParts .swiper-button-prev:hover,
+.SwiperDetailParts .swiper-button-next:hover {
+    transform: scale(1.1);
+}
+
+.SwiperDetailParts_mini .swiper-slide-thumb-active {
+    border: 3px solid #FFCD00;
+}
+
+@media (max-width:1400px) {
+    .SwiperDetailParts {
+        width: 800px;
+    }
+
+    .SwiperDetailParts_mini {
+        width: 800px;
+    }
+}
+
+@media (max-width:1200px) {
+    .SwiperDetailParts {
+        width: 650px;
+        height: 50vh;
+
+    }
+
+    .SwiperDetailParts_mini {
+        width: 650px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width:992px) {
+    .SwiperDetailParts {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .SwiperDetailParts_mini {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}

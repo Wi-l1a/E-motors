@@ -1,0 +1,151 @@
+.footer {
+    padding: 3% 0 3% 0;
+    width: 100%;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_logo {
+    flex: 0 1 10%;
+}
+
+.box_logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.box_contact {
+    flex: 0 1 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+.box_contact_info a,
+.box_contact_info p {
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#contact_number {
+    font-size: 20px;
+    color: #FFCD00;
+}
+
+
+.box_contact_info p:first-child {
+    color: #FFCD00;
+}
+
+.box_contact_icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.box_contact_icons img {
+    width: 32px;
+    height: 32px;
+    -webkit-filter: grayscale(100) brightness(200);
+    filter: grayscale(100) brightness(200);
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.box_contact_icons img:hover {
+    -webkit-filter: sepia(1) hue-rotate(300deg) saturate(30);
+    filter: sepia(1) hue-rotate(300deg) saturate(30);
+    transform: scale(1.1);
+}
+
+
+@media (min-width:1920px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .box_contact_info a,
+    .box_contact_info p {
+        font-size: 14px;
+    }
+
+    #contact_number {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .box_logo {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    .box_contact_info p {
+        text-align: center;
+    }
+
+    .box_contact {
+        align-items: center;
+    }
+
+    .box_contact_icons {
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width:768px) {
+    .footer {
+        padding: 0;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .box_logo {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    .box_contact_info p {
+        text-align: center;
+    }
+
+    .box_contact {
+        align-items: center;
+    }
+
+    .box_contact_icons {
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width:415px) {
+    .box_logo {
+        width: 40%;
+    }
+}

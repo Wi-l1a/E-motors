@@ -1,0 +1,16 @@
+.block_feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Gotham', sans-serif;
+    color: #FFFFFFCC;
+}
+
+@media (max-width:1200px) {
+    .block_feature {
+        font-size: 14px;
+    }
+}
